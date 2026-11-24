@@ -1,3 +1,79 @@
 /**
 * Accordeon
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+  font-family: system-ui, sans-serif;
+  color: #17212b;
+  background: #f2f5f7;
+}
+
+h1 {
+  margin: 0;
+}
+
+.accordeon {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #cbd5dc;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 0.75rem 2rem rgb(23 33 43 / 12%);
+}
+
+.accordeon > details {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100px;
+  height: 190px;
+  overflow: hidden;
+  border-right: 1px solid #cbd5dc;
+}
+
+.accordeon > details:last-child {
+  border-right: 0;
+}
+
+.accordeon > details[open] {
+  width: calc(100px + 20rem);
+}
+
+.accordeon > details > summary {
+  flex: 0 0 100px;
+  cursor: pointer;
+}
+
+.accordeon > details > summary img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.accordeon > details > div {
+  flex: 0 0 20rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.accordeon h3 {
+  margin: 0 0 0.75rem;
+}
+
+.accordeon p {
+  margin: 0;
+  line-height: 1.5;
+}
