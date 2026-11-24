@@ -41,6 +41,7 @@ h1 {
   height: 190px;
   overflow: hidden;
   border-right: 1px solid #cbd5dc;
+  transition: width 0.8s ease-in-out;
 }
 
 .accordeon > details:last-child {
@@ -76,4 +77,10 @@ h1 {
 .accordeon p {
   margin: 0;
   line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordeon > details {
+    transition: none;
+  }
 }
