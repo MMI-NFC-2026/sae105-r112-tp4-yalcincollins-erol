@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : YALCIN-COLLINS
+- prénom : Erol
+- URL Netlify : https://resplendent-crumble-eb0ff5.netlify.app
 
 # Travail
 
